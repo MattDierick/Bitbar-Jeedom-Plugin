@@ -6,7 +6,7 @@
 # <bitbar.author.github>MattDierick</bitbar.author.github>
 # <bitbar.desc>Keep an eye on Jeedom devices</bitbar.desc>
 # <bitbar.dependencies>python</bitbar.dependencies>
-# <bitbar.image>https://github.com/MattDierick/Bitbar-Jeedom-Plugin/blob/master/images/screenshot.png</bitbar.image>
+# <bitbar.image>https://raw.githubusercontent.com/MattDierick/Bitbar-Jeedom-Plugin/master/images/screenshot2.png</bitbar.image>
 
 import urllib2
 
