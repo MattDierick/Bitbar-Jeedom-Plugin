@@ -36,8 +36,12 @@ for i in range(len(idlistGRP1)):
     result = urllib2.urlopen(req).read()
     if result == "1":
         result = "on"
+        COLORS = "green"
     elif result == "0":
         result = "off"
+        COLORS = "red"
+    else:
+        COLORS = "black"
     print namelistGRP1[i], "{}".format(result), unitlistGRP1[i], "| color=black"
 
 print "---"
@@ -48,9 +52,13 @@ for i in range(len(idlistGRP2)):
     result = urllib2.urlopen(req).read()
     if result == "1":
         result = "on"
+        COLORS = "green"
     elif result == "0":
         result = "off"
-    print namelistGRP2[i], "{}" .format(result), unitlistGRP2[i], "| color=black"
+        COLORS = "red"
+    else:
+        COLORS = "black"
+    print namelistGRP2[i], "{}" .format(result), unitlistGRP2[i], "| color=", COLORS
 
 print "---"
 
@@ -60,6 +68,10 @@ for i in range(len(idlistGRP3)):
     result = urllib2.urlopen(req).read()
     if result == "1":
         result = "on"
+        COLORS = "green"
     elif result == "0":
         result = "off"
-    print namelistGRP3[i], "{}" .format(result), unitlistGRP3[i], "| color=black"
+        COLORS = "red"
+    else:
+        COLORS = "black"
+    print namelistGRP3[i], "{}" .format(result), unitlistGRP3[i], "| color=", COLORS
